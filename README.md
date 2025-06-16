@@ -38,7 +38,7 @@
 ├── ui.theme            # 自定義主題與樣式
 │
 ├── MainActivity        # APP 進入點，設定 Navigation
-└── MainApplication     # Application 類，初始化設定（例如：Koin DI）
+├── MainApplication     # Application 類，初始化設定（例如：Koin DI）
 └── Module              # 管理和定義應用程式中的依賴注入，便於各層之間的協作和測試。
 ```
 ---
