@@ -20,6 +20,8 @@
 ## 🧱 專案架構
 
 本專案依照 **Clean Architecture** 進行模組分層，並使用 MVI 模式處理 UI 狀態與事件：
+
+```plaintext
 📦 app/
 ├── data
 │   ├── database        # 本地資料來源實作（例如：假資料儲存）
