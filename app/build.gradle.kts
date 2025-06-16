@@ -57,12 +57,15 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    //koin
+    // koin
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.androidx.compose.navigation)
 
-    //orbit
+    // orbit
     implementation(libs.orbit.viewmodel)
     implementation(libs.orbit.compose)
+
+    // gson
+    implementation(libs.converter.gson)
 }

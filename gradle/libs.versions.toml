@@ -12,6 +12,7 @@ koin = "3.5.3"
 koin-compose = "3.5.3"
 orbitCompose = "9.0.0"
 orbitViewmodel = "9.0.0"
+retrofit = "2.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -37,6 +38,9 @@ koin-androidx-compose-navigation = { group = "io.insert-koin", name = "koin-andr
 # orbit
 orbit-compose = { module = "org.orbit-mvi:orbit-compose", version.ref = "orbitCompose" }
 orbit-viewmodel = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "orbitViewmodel" }
+
+# gson
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
