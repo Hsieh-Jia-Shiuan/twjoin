@@ -35,7 +35,7 @@ class ListViewModel(
     }
 
     fun editData(index: Int, newName: String) = intent {
-        val updatedList = state.datas.map { item ->
+        val updatedList = originalAllDatas.map { item ->
             if (item.id == index) {
                 item.copy(name = newName)
             } else {
@@ -51,7 +51,7 @@ class ListViewModel(
 
 
     fun deleteData(index: Int) = intent {
-        val newData = state.datas.toMutableList()
+        val newData = originalAllDatas.toMutableList()
         newData.removeIf { it.id == index }
         originalAllDatas = newData
 

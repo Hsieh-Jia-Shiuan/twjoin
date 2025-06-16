@@ -55,6 +55,7 @@ fun SearchBarWidget(
         ),
         keyboardActions = KeyboardActions(
             onSearch = {
+                onInput(currentInputText)
                 focusManager.clearFocus()
             }
         ),
